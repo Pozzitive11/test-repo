@@ -1,0 +1,22 @@
+<a class="product">
+  <p class="product__tag">{{ product.tag }}</p>
+  <img
+    class="product__img"
+    [src]="'assets/products/' + product.img"
+    [alt]="product.name"
+  />
+  <h3 class="product__title">{{ product.name }}</h3>
+  <div class="product__info">
+    <div class="product__price">
+      <span class="product__price-old">{{
+        product.old_price | currency : "USD" : "symbol"
+      }}</span>
+      <span class="product__price-new">{{
+        product.new_price | currency : "USD" : "symbol"
+      }}</span>
+    </div>
+    <div class="product__rating">
+      <app-star-rating [initialStars]="product.rating"></app-star-rating>
+    </div>
+  </div>
+</a>

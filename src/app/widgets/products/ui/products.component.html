@@ -1,0 +1,9 @@
+<ul class="products__list">
+  <li
+    class="products__item"
+    [routerLink]="['/product', product.id]"
+    *ngFor="let product of products"
+  >
+    <app-product [product]="product"></app-product>
+  </li>
+</ul>

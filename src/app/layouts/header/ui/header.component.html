@@ -1,0 +1,40 @@
+<header class="header">
+  <div class="container-fluid">
+    <div class="header__inner">
+      <app-logo routerLink="/" class="header__logo"></app-logo>
+
+      <nav class="nav" [class.open]="isMenuOpen">
+        <ul class="nav__list">
+          <li routerLinkActive="active" class="nav__item">
+            <a routerLink="/" class="nav__link">Home</a>
+          </li>
+          <li routerLinkActive="active" class="nav__item">
+            <a routerLink="/about" class="nav__link">About</a>
+          </li>
+          <li routerLinkActive="active" class="nav__item">
+            <a routerLink="/shop" class="nav__link">Shop</a>
+          </li>
+          <li routerLinkActive="active" class="nav__item">
+            <a routerLink="/projects" class="nav__link">Projects</a>
+          </li>
+          <li routerLinkActive="active" class="nav__item">
+            <a routerLink="/news" class="nav__link">News</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__right">
+        <app-search-products class="header__search"></app-search-products>
+        <app-cart routerLink="/order"></app-cart>
+        <div
+          class="burger-menu"
+          [class.open]="isMenuOpen"
+          (click)="toggleMenu()"
+        >
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
