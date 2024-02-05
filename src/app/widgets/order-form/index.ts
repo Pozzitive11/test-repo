@@ -1,1 +1,0 @@
-export { OrderFormComponent } from './ui';

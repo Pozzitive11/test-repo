@@ -1,1 +1,0 @@
-export { ProjectsSectionComponent } from './ui';

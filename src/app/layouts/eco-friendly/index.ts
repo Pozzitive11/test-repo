@@ -1,1 +1,0 @@
-export { EcoFriendlyComponent } from './ui';

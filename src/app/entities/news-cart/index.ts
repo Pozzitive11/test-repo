@@ -1,1 +1,0 @@
-export { NewsCardComponent } from './ui';

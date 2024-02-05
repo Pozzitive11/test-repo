@@ -1,1 +1,0 @@
-export { ProductSearchComponent } from './ui';

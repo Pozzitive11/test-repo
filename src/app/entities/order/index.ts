@@ -1,1 +1,0 @@
-export { ContactsComponent } from './ui';

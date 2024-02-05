@@ -1,1 +1,0 @@
-export { ProjectsSinglePageComponent } from './ui';

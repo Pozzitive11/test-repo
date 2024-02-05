@@ -1,1 +1,0 @@
-export { OfferComponent } from './ui';

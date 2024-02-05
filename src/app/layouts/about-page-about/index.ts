@@ -1,1 +1,0 @@
-export { AboutPageAboutComponent } from './ui';
